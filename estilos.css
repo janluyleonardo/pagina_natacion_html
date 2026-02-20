@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;						
+	-webkit-box-sizing: border-box;	 /*le da formato al texto de la pagina */
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* color:black; */ 
+}
+body{
+	
+	background-image: url(IMAGENES/FONDO4.jpg);
+	background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+div#header{
+	
+	width:100%;
+	height:100%;
+}
+div#general{
+	position:relative;
+	margin:auto;
+	margin-top:75px;			/*espacio que se le da para el submemenú*/
+	width:1550px;
+	height:1000px;
+	background-color:#2993ee;
+	text-align:center;
+}
+div#derecho{
+	position:relative;
+	float:right;
+	width:1343px;
+	height:545px;
+	background-color:#2993ee;			/*color del Div contenedor derecho*/
+	
+} 
+div#izquierdo{
+	position:relative;
+	background-color:0;		/*#043FB8	*/
+	color:black;
+	float:left;
+	width:200px;
+	height:545px;
+	
+} 
+div#inferior{
+	
+	margin-top:10px;
+	float:left;
+	background-color:blue;			/*#043FB8*/
+	color:white;
+	width:1550px;
+	height:435px;
+}
+div#video{
+	margin:auto;
+	float:left;
+}
+div#registro{
+	position:relative;
+	margin-top:10px;
+	margin-left:75px;
+	margin-right:75px;
+	margin-bottom:10px;
+}
+div#pie_de_pagina{
+	
+	position:relaitive;
+	background:0;		/*black*/
+	color:black;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	
+}
+
+table#negro{
+	color:black;
+}
+
+.margen{
+	position:relaitive;
+	background:0;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	
+} 
+h1{
+	font-family:verdana;
+	font-size:50px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:underline;
+}
+h2{
+	font-family:verdana;
+	font-size:35px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+}
+h4{
+	font-family:verdana;
+	font-size:15px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+}
+h7{
+	font-family:verdana;
+	font-size:20px;
+	font-style:italic;
+	text-align:center;
+	
+}
+.navegacion{
+	
+		width: 850px;
+		margin: 30px auto;
+		background: 0;		/*lightblue*/
+	
+}
+.navegacion ul{
+	list-style: fixed;
+	
+}
+.menu > li{
+	position: relative; 
+	display: inline-block;
+	
+}
+.menu > li a{
+	display: block;
+	padding: 25px 15px;
+	color: #353535;
+	font-family: "verdana";
+	text-decoration: none;
+
+}
+.menu > li a:hover{
+	color: blue/*#CE7D35*/
+
+}
+/* submenu*/
+
+.submenu{
+	position: fixed;/*absolute*/
+	background: #C1D9E5;
+	display: none;
+}
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: #060607;
+	font-family: verdana;
+	text-decoration: none;
+	
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.form-horizontal h2{
+  color:red;			/*#fff*/
+  text-shadow:5px 5px 5px #000000;
+}
+
+.menu li:hover .submenu{
+	display:block;
+	
+	
+}
+#boton{
+	color:blue;
+  width: 100%;			/*este es el tamaño del boton del formulario contactenos*/
+}
+.form-horizontal{
+  width: 30%;
+  margin: auto;
+  background:rgba(0,10,0,0.5);
+  padding: 10px 20px;				/*este es el estilo para el formulario de contactenos*/
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font: 400 15px Lato, comic sans ms; 				/*sans-serif*/
+  color:WHITE;
+}
+
