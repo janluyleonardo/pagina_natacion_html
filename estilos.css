@@ -4,8 +4,10 @@
 	-webkit-box-sizing: border-box;	 /*le da formato al texto de la pagina */
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
 	/* color:black; */ 
 }
+
 body{
 	
 	background-image: url(IMAGENES/FONDO4.jpg);
@@ -21,59 +23,73 @@ div#header{
 div#general{
 	position:relative;
 	margin:auto;
-	margin-top:75px;			/*espacio que se le da para el submemenú*/
-	width:1550px;
+	margin-top:75px;	/*espacio que se le da para el submemenú*/
+	width:95%;		/*1550px*/
 	height:1000px;
-	background-color:#2993ee;
+	background-color:0;
 	text-align:center;
 }
 div#derecho{
 	position:relative;
 	float:right;
-	width:1343px;
+	width:85%;			/*1143px*/
 	height:545px;
-	background-color:#2993ee;			/*color del Div contenedor derecho*/
+	background-color:0;			/*color del Div contenedor derecho*/
 	
 } 
 div#izquierdo{
-	position:relative;
+	position:relaitive;
 	background-color:0;		/*#043FB8	*/
 	color:black;
 	float:left;
-	width:200px;
+	width:15%;		/*200px*/
 	height:545px;
-	
+	text-align:left;
 } 
 div#inferior{
 	
 	margin-top:10px;
 	float:left;
-	background-color:blue;			/*#043FB8*/
+	background-color:0;			/*#043FB8*/
 	color:white;
-	width:1550px;
-	height:435px;
+	width:100%;
+	height:450px;
 }
 div#video{
-	margin:auto;
+	margin:10px;	/*auto*/	
 	float:left;
-}
-div#registro{
-	position:relative;
-	margin-top:10px;
-	margin-left:75px;
-	margin-right:75px;
-	margin-bottom:10px;
+	width:45%;
+	height:426px;
+	background-color:black;
 }
 div#pie_de_pagina{
 	
+	background:rgba(0,10,0,0.1);
 	position:relaitive;
-	background:0;		/*black*/
 	color:black;
 	margin-top:10px;
 	margin-left:10px;
 	margin-right:10px;
 	margin-bottom:10px;
 	
+}
+
+div#registro{
+	position:relative;
+	float:right;
+	width:45%;
+	height:435px;
+	background-color:0;
+	/* margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;  */
+}
+
+div#dentro_de_pie{
+	margin-right:10px;
+	float:right;
+	background-color:black;
 }
 
 table#negro{
@@ -122,7 +138,7 @@ h7{
 	
 		width: 850px;
 		margin: 30px auto;
-		background: 0;		/*lightblue*/
+		background: 0;			/*lightblue*/
 	
 }
 .navegacion ul{
@@ -137,36 +153,45 @@ h7{
 .menu > li a{
 	display: block;
 	padding: 25px 15px;
-	color: #353535;
+	color: black;			/* color inicial del menu superior*/
 	font-family: "verdana";
 	text-decoration: none;
 
 }
 .menu > li a:hover{
-	color: blue/*#CE7D35*/
+	color: white/*#CE7D35 color de la letra al estar el mause encima*/
 
 }
 /* submenu*/
 
 .submenu{
 	position: fixed;/*absolute*/
-	background: #C1D9E5;
+	background: 0;	/*#C1D9E5*/ /*color del fondo del submenu*/
 	display: none;
 }
 .submenu li a{
 	display: block;
 	padding: 10px;
-	color: #060607;
+	color:#060607 ;		/**//*colo de la letra del submenu al momento en que se desopliega*/
 	font-family: verdana;
 	text-decoration: none;
 	
 }
 .container-fluid {
-  padding: 60px 50px;
+  padding: 600px 500px;
+  
+}
+.form-horizontal h1{
+  color:#fff;			/**/
+  text-shadow:5px 5px 5px blue;		/*sombra de la ltra del titulo del form*/
 }
 .form-horizontal h2{
-  color:red;			/*#fff*/
-  text-shadow:5px 5px 5px #000000;
+  color:#fff;			/**/
+  text-shadow:5px 5px 5px blue;		/*sombra de la ltra del titulo del form*/
+}
+.form-horizontal h4{
+  color:black;			/*#fff*/
+  text-shadow:5px 5px 5px WHITE;		/*sombra de la letra del titulo del footter*/
 }
 
 .menu li:hover .submenu{
@@ -174,18 +199,19 @@ h7{
 	
 	
 }
-#boton{
+#boton{		/*este es el tamaño y color del boton del formulario registro nuevo*/
 	color:blue;
-  width: 100%;			/*este es el tamaño del boton del formulario contactenos*/
+    width: 20%;			
 }
-.form-horizontal{
-  width: 30%;
+.form-horizontal{			/*este es el estilo para el formulario de registro nuevo*/
+  width: 100%;
+  height:100%;
   margin: auto;
   background:rgba(0,10,0,0.5);
-  padding: 10px 20px;				/*este es el estilo para el formulario de contactenos*/
-  border-radius: 7px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 10px 10px;				
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   font: 400 15px Lato, comic sans ms; 				/*sans-serif*/
   color:WHITE;
 }
